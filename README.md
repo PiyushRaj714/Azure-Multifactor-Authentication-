@@ -63,6 +63,7 @@ After you enable the remember multifactor authentication feature, users can mark
 
 # 8. Account Lockout
 To configure account lockout settings, complete these steps:
+![Screenshot 2024-07-22 231645](https://github.com/user-attachments/assets/17269466-9c90-42c5-8303-1ad9f0bf723c)
 
 1)Sign in to the Microsoft Entra admin center as at least an Authentication Policy Administrator.
 2)Browse to Protection > Multifactor authentication > Account lockout. You might need to click Show more to see Multifactor authentication.
@@ -83,10 +84,14 @@ Select Add.
 To extend Azure AD MFA to third-party applications and on-premises devices, use Azure AD Application Proxy or integrate with an on-premises MFA server.
 
 # 11.Monitor Azure AD MFA activity 
+![Screenshot 2024-07-23 010440](https://github.com/user-attachments/assets/e34c0300-dd5b-48bb-b9fc-321a73456c41)
+
 Sign in to the Azure portal.
 In the left-hand menu, select "Azure Active Directory" and then select "Audit logs" under "Monitoring."
 On the "Audit logs" page, you can use the filters to specify the time range and other parameters for the logs you want to view.
-In the "Activity" dropdown menu, select "User Management." This will show you all the user management activities, including when a user enabled MFA.
+
+![Screenshot 2024-07-23 010406](https://github.com/user-attachments/assets/36c583fd-5af0-423a-ad05-ddf1eabcdc8c)
+In the "Activity" drop down menu, select "User Management." This will show you all the user management activities, including when a user enabled MFA.
 Look for an entry with the activity "Enable MFA for a user." The "Time" column will show you the date and time when the MFA was enabled.
 
 # 12.OAuth Tokens
@@ -98,6 +103,7 @@ OATH hardware tokens are supported as part of a public preview.
 # After you acquire tokens, you need to upload them in a comma-separated values (CSV) file format. Include the UPN, serial number, secret key, time interval, manufacturer, and model.
 
 Sign in to the Microsoft Entra admin center as a Global Administrator, go to Protection > Multifactor authentication > OATH tokens, and upload the CSV file.
+![Screenshot 2024-07-23 005522](https://github.com/user-attachments/assets/066a283f-ba6e-42f8-9f07-c58f82d30e1b)
 
 Depending on the size of the CSV file, it might take a few minutes to process. Select Refresh to get the status. If there are any errors in the file, you can download a CSV file that lists them. The field names in the downloaded CSV file are different from those in the uploaded version.
 
