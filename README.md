@@ -82,6 +82,15 @@ Select Add.
 
 # 10. Extend Azure AD MFA to third party and on-premises devices
 To extend Azure AD MFA to third-party applications and on-premises devices, use Azure AD Application Proxy or integrate with an on-premises MFA server.
+To extend Azure AD MFA to third-party applications and on-premises devices, use Azure AD Application Proxy or integrate with an on-premises MFA server.
+•  Set up Azure AD Application Proxy:
+•	In the Azure portal, go to "Azure Active Directory".
+•	Select "Application proxy", then "Enable Application Proxy". Follow the setup instructions to download and install the Application Proxy connector.
+•  Publish an On-Premises Application:
+•	Go to "Azure Active Directory" > "Enterprise applications".
+•	Select "New application" > "On-premises application".
+•	Provide the necessary details for the application (name, internal URL, external URL).
+•	Configure any additional settings (authentication, SSO).
 
 # 11.Monitor Azure AD MFA activity 
 ![Screenshot 2024-07-23 010440](https://github.com/user-attachments/assets/e34c0300-dd5b-48bb-b9fc-321a73456c41)
